@@ -11,8 +11,11 @@
 #navbar {
     display: flex;
     list-style: none;
-
+    background: -webkit-linear-gradient(left, #3a9ca3, #33d6a8);
 }
+
+
+
 
 .login-con {
     margin: auto;
@@ -30,12 +33,4 @@
 .nav-it-rt {
     margin: 20px;
     font-size: 2rem;
-
-
-}
-
-.student-view {
-    width: 100%;
-    background: tomato;
-    height: 80vh;
 }
