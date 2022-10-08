@@ -12,22 +12,30 @@
 <body>
     <nav id="navbar">
         <li class="nav-it">Home</li>
-        <li class="nav-it">About</li>
-        <li class="nav-it">Contact Us</li>
+        <li class="nav-it">Notification</li>
+        <div class="dropdown">
+            <li class="nav-it" onclick="show_sub()">Subjects</li>
+            <div class="dropdown-cont" id="dropdown-cont">
 
-        <div class="nav-it">
+                <li class="subject-it" id="">Medical surgical nursing
+                </li>
 
-            <div class="header">
-                <p>Subject</p>
+                <li class="subject-it">Child health nursing
+                </li>
+
+                <li class="subject-it">Mental health nursing
+                </li>
+
+                <li class="subject-it">Obstetrics and gynaecology
+                </li>
             </div>
-
-
-            <!-- 
-            <li id="subject">Subject</li> -->
-
         </div>
 
+        <li class="nav-it"></li>
+
+
         <div class="login-con">
+            <input type="text" placeholder="   Search Subject">
             <li class="nav-it-rt">Login</li>
             <li class="nav-it-rt">Sign up</li>
         </div>
@@ -36,5 +44,6 @@
 
 
 </body>
+<script src="../js/index.js"></script>
 
 </html>

@@ -12,15 +12,109 @@
     display: flex;
     list-style: none;
     background: -webkit-linear-gradient(left, #3a9ca3, #33d6a8);
+
 }
 
 
+/* dropdown css */
+.dropdown {
+    position: relative;
+
+
+}
+
+.dropdown-cont {
+    position: absolute;
+    background-color: rgb(35, 140, 140);
+    border-radius: 10px;
+    opacity: 0;
+    padding: 10px;
+    pointer-events: none;
+    width: 300px;
+    box-shadow: 20px;
+
+}
+
+.dropdowncontshow {
+    position: absolute;
+    pointer-events: all;
+    background-color: rgb(35, 140, 140);
+    border-radius: 10px;
+    opacity: 100;
+    transition: ease-in-out 0.5s;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+
+}
+
+
+
+.subject-it {
+    font-size: 20px;
+    border-radius: 10px;
+    border-radius: 0px;
+    border-radius: 0px;
+    border-radius: 0px;
+
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+
+}
+
+.subject-it:hover {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: antiquewhite;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 10px;
+    border-radius: 0px;
+    background: linear-gradient(145deg, #259696, #207e7e);
+    box-shadow: 5px 5px 47px #155454,
+        -5px -5px 47px #31c4c4;
+
+    /* From https://css.glass */
+    background: rgba(58, 156, 163, 1);
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.3px);
+    -webkit-backdrop-filter: blur(5.3px);
+    border: 1px solid rgba(58, 156, 163, 0.3);
+}
 
 
 .login-con {
     margin: auto;
     margin-right: 0;
     display: flex;
+
+}
+
+
+
+.login-con input {
+    height: 30px;
+    margin: 33px;
+    border-radius: 10px;
+    width: 170px;
 
 }
 
@@ -33,4 +127,6 @@
 .nav-it-rt {
     margin: 20px;
     font-size: 2rem;
+    border-radius: 50%;
+
 }
