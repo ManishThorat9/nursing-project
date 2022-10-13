@@ -5,13 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 
 
 #navbar {
     display: flex;
     list-style: none;
-    background: -webkit-linear-gradient(left, #3a9ca3, #33d6a8);
+    /* background: -webkit-linear-gradient(left, #3a9ca3, #33d6a8); */
+    border-radius: 0px;
+    background: #98A8F8;
 
 }
 
@@ -36,23 +39,16 @@
 
 .dropdowncontshow {
     position: absolute;
+    display: flex;
     pointer-events: all;
-    background-color: rgb(35, 140, 140);
+    background-color: #BCCEF8;
     border-radius: 10px;
     opacity: 100;
     transition: ease-in-out 0.5s;
-    padding: 20px;
-    width: 300px;
-    margin: 10px;
-
-
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 50;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 2em;
 
 
 
@@ -62,17 +58,13 @@
 
 .subject-it {
     font-size: 20px;
-    border-radius: 10px;
-    border-radius: 0px;
-    border-radius: 0px;
-    border-radius: 0px;
-
     background: rgba(255, 255, 255, 0.6);
-    border-radius: 16px;
+
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 
 
 
@@ -80,23 +72,18 @@
 
 .subject-it:hover {
     font-size: 20px;
-    color: rgb(255, 255, 255);
-    background-color: antiquewhite;
     cursor: pointer;
     transition: 0.5s;
-    border-radius: 10px;
-    border-radius: 0px;
-    background: linear-gradient(145deg, #259696, #207e7e);
-    box-shadow: 5px 5px 47px #155454,
-        -5px -5px 47px #31c4c4;
+
+
 
     /* From https://css.glass */
-    background: rgba(58, 156, 163, 1);
+
     border-radius: 2px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.3px);
     -webkit-backdrop-filter: blur(5.3px);
-    border: 1px solid rgba(58, 156, 163, 0.3);
+
 }
 
 
@@ -120,6 +107,7 @@
 .nav-it {
     margin: 20px;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 
@@ -127,6 +115,7 @@
     margin: 20px;
     font-size: 2rem;
     border-radius: 50%;
+    text-decoration: none;
 
 }
 
@@ -144,11 +133,22 @@
     text-align: center;
     width: 300px;
     height: 400px;
-    border-radius: 10%;
+    border-radius: 1%;
     margin: 2%;
-    background-color: #155454;
+    background-color: #98A8F8;
 
 }
+
+.module:hover {
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: 2%;
+    background-color: #98a8f845;
+    transform: translatey(-10px);
+    transition: 700ms;
+}
+
 
 /* .module_overflow {
     text-align: center;
@@ -161,10 +161,17 @@
 } */
 
 .heading {
+    display: block;
     text-align: center;
-    margin: 10%;
+    font-size: 2em;
+    background-color: #98A8F8;
+}
 
-    background-color: #fff;
+.heading:hover {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+
 }
 
 .module-it {
@@ -179,6 +186,28 @@
 }
 
 .chap {
-    margin: 5%;
+    list-style-type: disc;
+    text-decoration: none;
+    text-align: left;
+    margin: 3%;
+    padding: 5px;
     cursor: pointer;
+    background-color: #98A8F8;
+    width: 95%;
+}
+
+.chap:hover {
+    list-style-type: disc;
+    text-decoration: none;
+    background-color: #BCCEF8;
+
+}
+
+
+.bgimg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    overflow: hidden;
 }
